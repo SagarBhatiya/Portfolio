@@ -1,7 +1,14 @@
+import Home from "./Home";
+
 function App() {
-  return ( 
-    <div>Hello</div>
-   );
+  return (
+ 
+ <>
+  <Home/>
+  <Skill/>
+ </>
+  
+  );
 }
 
-export default App
+export default App;
