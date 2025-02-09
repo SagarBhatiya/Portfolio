@@ -1,6 +1,6 @@
 function Skills() {
     return ( 
-        <div className="h-screen w-full bg-green-100">
+        <div id="skill" className="h-screen w-full bg-green-100">
             skill
         </div>
      );

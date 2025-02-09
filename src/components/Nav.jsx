@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { TfiAlignJustify } from "react-icons/tfi";
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
 
 
 function Nav() {
@@ -18,10 +18,10 @@ function Nav() {
         </div>
         <div className={`w-full  h-[25%] text-white font-bold bg-white/4 flex flex-col gap-4 p-3 ${showDetails?'invisible':'visible'}  md:visible md:flex md:flex-row  md:w-[63%] gap-12  md:mr-30 md:bg-transparent  md:items-center md:justify-around`}>
      
-    <Link smooth={true} offset={200} duration={500} className="md:hover:text-[#854CE6]" to="/">Home</Link>
-     <Link smooth={true} offset={200} duration={500} className="md:hover:text-[#854CE6]" to="/about">About</Link>
-        <Link smooth={true} offset={200} duration={500} className="md:hover:text-[#854CE6]" to="/skills">Skills</Link>
-        <Link smooth={true} offset={200} duration={500} className="md:pr-10 md:hover:text-[#854CE6]" to="/projects">Projects</Link>
+    <a href="/"   className="md:hover:text-[#854CE6]" to="/">Home</a>
+     <a href="#about"  className="md:hover:text-[#854CE6]" to="/about">About</a>
+        <a href="#skill"   className="md:hover:text-[#854CE6]" to="/skills">Skills</a>
+        <a href="#project" className="md:pr-10 md:hover:text-[#854CE6]" to="/projects">Projects</a>
       
          <Link to="https://github.com/SagarBhatiya" className="h-[15%] w-[29%] rounded-full flex items-center justify-center bg-[#854CE6] md:h-[48%] md:w-[20%]   md:border-solid md:border-2 md:border-[#854CE6] md:bg-transparent md:text-[#854CE6] md:hover:bg-[#854CE6] md:hover:text-white">Github Profile</Link>
         </div>

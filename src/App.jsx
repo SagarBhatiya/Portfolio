@@ -1,11 +1,12 @@
-import Home from "./Home";
-
+import Home from "./components/Home";
+import Nav from "./components/Nav";
 function App() {
   return (
  
  <>
-  <Home/>
-  <Skill/>
+ <Nav/>
+ <Home/>
+  
  </>
   
   );
