@@ -23,7 +23,7 @@ function Nav() {
         <a href="#skill"   className="md:hover:text-[#854CE6]" to="/skills">Skills</a>
         <a href="#project" className="md:pr-10 md:hover:text-[#854CE6]" to="/projects">Projects</a>
       
-         <Link to="https://github.com/SagarBhatiya" className="h-[15%] w-[29%] rounded-full flex items-center justify-center bg-[#854CE6] md:h-[48%] md:w-[20%]   md:border-solid md:border-2 md:border-[#854CE6] md:bg-transparent md:text-[#854CE6] md:hover:bg-[#854CE6] md:hover:text-white">Github Profile</Link>
+         <a href="https://github.com/SagarBhatiya" className="h-[15%] w-[29%] rounded-full flex items-center justify-center bg-[#854CE6] md:h-[48%] md:w-[20%]   md:border-solid md:border-2 md:border-[#854CE6] md:bg-transparent md:text-[#854CE6] md:hover:bg-[#854CE6] md:hover:text-white">Github Profile</a>
         </div>
         </div>
         </>
