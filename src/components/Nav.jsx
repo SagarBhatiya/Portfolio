@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { TfiAlignJustify } from "react-icons/tfi";
-
+import { Link } from "react-router-dom";
 
 
 function Nav() {
@@ -10,13 +10,13 @@ function Nav() {
     }
         return ( 
        <>
-        <div className="fixed h-[10vh] md:h-[15vh] md:w-full bg-[#13131F] md:flex md:gap-6 flex flex-col items-center  md: justify-around md:items-center md:bg-[#13131F] ">
-        <div className="h-[10%] w-[80vh] ml-5 md:w-[25%] flex items-center justify-between  p-5 md:flex md:items-center md:justify-center ">
+        <div className="fixed md:w-full bg-[#13131F] md:flex md:gap-6  md: justify-center md:items-center md:bg-[#13131F] ">
+        <div className="h-[10%] w-screen md:w-[35%] flex items-center justify-between p-5 md:flex md:items-center md:justify-center ">
             <p className="  text-white text-xl font-bold p-4 ">Sagar <span className="text-[#854CE6] text-center">Bhatiya</span></p>
             <TfiAlignJustify className="text-xl text-white md:invisible" onClick={toggleDetails} />
             
         </div>
-        <div className={`w-full   h-[25%] text-white font-bold bg-red-600 flex flex-col gap-4 p-3 ${showDetails?'invisible':'visible'}  md:visible md:flex md:flex-row  md:w-[63%] gap-12  md:mr-30 md:bg-transparent  md:items-center md:justify-around`}>
+        <div className={`w-full  h-[25%] text-white font-bold bg-white/4 flex flex-col gap-4 p-3 ${showDetails?'invisible':'visible'}  md:visible md:flex md:flex-row  md:w-[63%] gap-12  md:mr-30 md:bg-transparent  md:items-center md:justify-around`}>
      
     <a href="/"   className="md:hover:text-[#854CE6]" to="/">Home</a>
      <a href="#about"  className="md:hover:text-[#854CE6]" to="/about">About</a>
