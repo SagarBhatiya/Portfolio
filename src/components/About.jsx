@@ -27,18 +27,20 @@ function About() {
       </div>
 
       <div className="left-10 h-[25vh] w-[40vh] absolute top-135 md:h-[25vh]  md:w-[35vw]  w-[75vw] md:left-19 md:top-85">
-        <h1 className="text-lg font-bold text-[#919299] text-center">
+        <h1 className="text-lg md:text-start font-bold text-[#919299] text-center">
           I’m a motivated and flexible person who loves taking on new
           challenges. I enjoy learning new things and always aim to do my best
           work. With a positive attitude and a focus on growth, I’m ready to
           contribute and achieve great results.
         </h1>
       </div>
-      <div className="h-[7%]  w-[40%]  text-semibold text-white top-190 left-28  absolute bg-[#854CE6] border-solid border-2 border-[#854CE6]   rounded-full flex items-center justify-center  md:top-130 md:left-50 md:h-[10vh] md:w-[15vw]    bg-gradient-to-r from-[#C600] to-[#9100FF]  transition-all duration-300 hover:scale-105  bg-gradient-to-r from-[#C600FF] to-[#9100FF]  transition-all duration-300 hover:scale-105 text-white">
+     
+      <div className="h-[7%]  w-[40%] absolute text-semibold text-white top-190  left-28  bg-[#854CE6] border-solid border-2 border-[#854CE6]   rounded-full flex items-center justify-center  md:top-130 md:left-50 md:h-[10vh] md:w-[15vw]    bg-gradient-to-r from-[#C600] to-[#9100FF]  transition-all duration-300 hover:scale-105  bg-gradient-to-r from-[#C600FF] to-[#9100FF]  transition-all duration-300 hover:scale-105 text-white">
         <a href="https://drive.google.com/file/d/1KsC8-nUolQYk2aeCGUfXBsEUZCToNwom/view">
           Resume
         </a>
       </div>
+     
     </div>
   );
 }
