@@ -1,19 +1,19 @@
-const Card= () => {
-    const Cards = [
-        {id:1,title:"React.js",img:""},
-        {id:2,title:"HTML",img:""},
-        {id:3,title:"CSS",img:""},
-        {id:4,title:"JavaScript",img:""},
-        {id:5,title:"Tailwind Css",img:""},
-        
-    ]
-    return ( 
-      <div className="h-[5vh] flex gap-3 w-[30vw] rounded-lg border border-white border-solid flex justify-center items-center z-10">
-        <div className="h-[4vh] w-[8vw] bg-red-100"></div>
-        <p className="text-white">React.js</p>
-      </div>
-    );
-  };
-  
-  export default Card;
-  
+const Card = ({ cards }) => {
+  return (
+    <div className="flex flex-wrap gap-6 justify-center">
+      {cards.map((card, index) => (
+        <div
+          key={index} 
+          className="h-[15vh] w-[23vw] flex flex-col justify-center items-center rounded-lg border border-white border-solid p-6 shadow-lg bg-gray-800"
+        >
+          <div className="h-[5vh] w-[10vw] bg-red-100 flex justify-center items-center rounded-lg mb-4">
+            <p className="text-white text-3xl font-bold">{card[0]}</p> 
+          </div>
+          <p className="text-white text-lg font-medium">{card}</p> 
+        </div>
+      ))}
+    </div>
+  );
+};
+
+export default Card;
