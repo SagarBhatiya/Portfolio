@@ -2,8 +2,8 @@ import Card from './Card';
 
 function Cards() {
     const card = [
-        { id: 1, title: "Frontend", cards: ["HTML", "CSS", "JavaScript", "React.js", "TailwindCss"] },
-        { id: 2, title: "Backend", cards: ["Node.js", "Express", "MongoDB", "SQL"] },
+        { id: 1, title: "Frontend", cards: ["HTML", "CSS", "JavaScript", "Reactjs", "TailwindCss"] },
+        { id: 2, title: "Backend", cards: ["Nodejs", "Express", "MongoDB", "MYSQL"] },
     ];
 
     return (
